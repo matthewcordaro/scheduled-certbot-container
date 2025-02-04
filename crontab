@@ -1,0 +1,2 @@
+# Run the script every day at 8 UTC (3AM EST)
+0 8 * * * /renew-cert.sh >> /var/log/cron.log 2>&1

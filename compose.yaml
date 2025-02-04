@@ -1,0 +1,13 @@
+services:
+  certbot:
+    build: .
+    container_name: certbot-scheduler
+    volumes:
+      - certs:/certs
+    environment:
+      - TZ=EST
+    restart: always
+
+volumes:
+  certs:
+    external: true
