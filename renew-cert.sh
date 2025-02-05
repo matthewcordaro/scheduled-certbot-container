@@ -6,6 +6,8 @@
 export AWS_ACCESS_KEY_ID
 export AWS_SECRET_ACCESS_KEY
 
+date
+
 echo "Running certbot request for domain: $DOMAIN"
 
 # Build the Certbot command with Route53 Challenge
